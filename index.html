@@ -5,34 +5,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script defer src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <script defer src="./js/weather.js"></script>
+    <script defer src="./js/forecast.js"></script>
+    <link rel="stylesheet" href="./style/style_weather.css">
+    <link rel="stylesheet" href="./style/style_forecast.css">
+    <link rel="shortcut icon" href="./img/iconweather.png">
+    
     <title>Weather</title>
 </head>
 
 <body>
-    <div id="base">
-        <h1 id="sity-name"></h1>
-        <h2 id="temp"></h2>
-        <div id="determinant">
-            <i>Max</i>
-            <i>Min</i>
-        </div>
+    <div id="weather">
+        <div id="base">
+            <h1 id="sity-name"></h1>
+            <h1 id="current-date"></h1>
+            <h2 id="temp"></h2>
+            <div id="determinant">
+                <i>Max</i>
+                <i>Min</i>
+            </div>
 
-        <div id="range-temp"></div>
-        <ul id="feature">
-            <li></li>
-        </ul>
-        <h3 id="description"></h3>
-        <button id="detailed-button">
-            <p>detailed</p>
-        </button>
-    </div>
-    <div id="detailed-info">
-        <div id="scorekeeper">
-            <ul id="score"></ul>
-            <ul id="info"></ul>
+            <div id="range-temp"></div>
+            <ul id="feature">
+                <li></li>
+            </ul>
+            <h3 id="description"></h3>
+            <button id="detailed-button">
+                <p>detailed</p>
+            </button>
         </div>
+        <div id="detailed-info">
+            <div id="scorekeeper">
+                <ul id="score"></ul>
+                <ul id="info"></ul>
+            </div>
+        </div>
+    </div>
+    <div id="full-container">
+        <div id="forecast">
+            <div class="forecast-item">
+                <div class="forecast-time"></div>
+                <div class="forecast-icon"></div>
+                <div class="forecast-temperature"></div>
+            </div>
+            <div class="forecast-item">
+                <div class="forecast-time"></div>
+                <div class="forecast-icon"></div>
+                <div class="forecast-temperature"></div>
+            </div>
+            <div class="forecast-item">
+                <div class="forecast-time"></div>
+                <div class="forecast-icon"></div>
+                <div class="forecast-temperature"></div>
+            </div>
+            <div class="forecast-item">
+                <div class="forecast-time"></div>
+                <div class="forecast-icon"></div>
+                <div class="forecast-temperature"></div>
+            </div>
+            <div class="forecast-item">
+                <div class="forecast-time"></div>
+                <div class="forecast-icon"></div>
+                <div class="forecast-temperature"></div>
+            </div>
+            <div class="forecast-item">
+                <div class="forecast-time"></div>
+                <div class="forecast-icon"></div>
+                <div class="forecast-temperature"></div>
+            </div>
+            <div class="forecast-item">
+                <div class="forecast-time"></div>
+                <div class="forecast-icon"></div>
+                <div class="forecast-temperature"></div>
+            </div>
+        </div>
+        <div id="chart-container"></div>
     </div>
 
 </body>

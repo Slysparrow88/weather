@@ -1,0 +1,45 @@
+#full-container{
+    width: 100%;
+    margin: 0 10px 0 20px;
+}
+#forecast {
+    background: rgba(97, 179, 255, 0.5);
+    display: flex;    
+    width: 100%;
+    height: 45%;
+}
+
+.forecast-item {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.forecast-time {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    font-size: 15px;
+    font-family: Sans-serif;
+}
+
+.forecast-icon {
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.forecast-temperature {
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: Sans-serif;
+}
