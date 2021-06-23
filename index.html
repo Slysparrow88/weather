@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script defer src="./js/weather.js"></script>
-    <script defer src="./js/forecast.js"></script>
+
+    <script type="module" src="./js/weather.js"></script>
+    <script type="module" src="./js/forecast.js"></script>
+    <script src="node_modules/chart.js/dist/chart.js"></script>
+
     <link rel="stylesheet" href="./style/style_weather.css">
     <link rel="stylesheet" href="./style/style_forecast.css">
     <link rel="shortcut icon" href="./img/iconweather.png">
-    
+
     <title>Weather</title>
 </head>
 
@@ -43,43 +46,10 @@
     </div>
     <div id="full-container">
         <div id="forecast">
-            <div class="forecast-item">
-                <div class="forecast-time"></div>
-                <div class="forecast-icon"></div>
-                <div class="forecast-temperature"></div>
-            </div>
-            <div class="forecast-item">
-                <div class="forecast-time"></div>
-                <div class="forecast-icon"></div>
-                <div class="forecast-temperature"></div>
-            </div>
-            <div class="forecast-item">
-                <div class="forecast-time"></div>
-                <div class="forecast-icon"></div>
-                <div class="forecast-temperature"></div>
-            </div>
-            <div class="forecast-item">
-                <div class="forecast-time"></div>
-                <div class="forecast-icon"></div>
-                <div class="forecast-temperature"></div>
-            </div>
-            <div class="forecast-item">
-                <div class="forecast-time"></div>
-                <div class="forecast-icon"></div>
-                <div class="forecast-temperature"></div>
-            </div>
-            <div class="forecast-item">
-                <div class="forecast-time"></div>
-                <div class="forecast-icon"></div>
-                <div class="forecast-temperature"></div>
-            </div>
-            <div class="forecast-item">
-                <div class="forecast-time"></div>
-                <div class="forecast-icon"></div>
-                <div class="forecast-temperature"></div>
-            </div>
         </div>
-        <div id="chart-container"></div>
+        <div id="chart-container">
+            <canvas id="data-graph"></canvas>
+        </div>
     </div>
 
 </body>

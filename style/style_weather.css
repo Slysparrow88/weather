@@ -2,9 +2,8 @@ body {
     display: flex;
     margin-top: 100px;
     text-align: center;
-    background: url('https://images.alphacoders.com/218/thumb-1920-218193.jpg');
-    /* background-size: cover;   */
-    background-size: auto cover;
+    background: url('https://images.alphacoders.com/218/thumb-1920-218193.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 #weather {
@@ -16,7 +15,7 @@ body {
     margin: auto;
     border-bottom: none;
     width: 300px;
-    height: 100%;
+    height: 380px;
 }
 
 #current-date {
@@ -41,7 +40,7 @@ body {
 }
 
 #temp {
-    margin: 20px 0 25px 0;
+    margin: 10px 0 10px 0;
     color: white;
     font-size: 40px;
     text-shadow: 5px 5px 5px black;
@@ -51,15 +50,16 @@ body {
 }
 
 #description {
-    margin: 0;
+    margin: 0 0 10px 0;
     color: rgb(255, 137, 27);
     text-shadow: 2px 2px 5px black;
-    font-size: 18px;
+    font-size: 15px;
     text-transform: uppercase;
     font-family: Sans-serif;
 }
 
 #feature {
+    margin: 0;
     padding: 0;
 }
 
@@ -68,15 +68,15 @@ body {
 }
 
 #feature li img {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
 }
 
 #detailed-button {
-    margin-top: 13px;
+    margin-top: 20px;
     width: 100%;
     height: 40px;
-    background: rgb(255, 137, 27);
+    background: rgb(255, 137, 27, 0.8);
     font-size: 20px;
     text-transform: uppercase;
     font-family: Sans-serif;
@@ -90,10 +90,10 @@ body {
 }
 
 #detailed-info {
+    top: 517px;
     background: rgba(97, 179, 255, 0.5);
     position: absolute;
     width: 300px;
-    /* border: solid 3px rgb(255, 137, 27); */
     border-top: none;
     margin: auto;
 }
@@ -113,7 +113,7 @@ body {
 }
 
 #determinant i {
-    margin: 0 60px 0 60px;
+    margin: 0 20% 0 20%;
     color: rgb(255, 137, 27);
     font-weight: bold;
     font-size: 12px;
@@ -156,4 +156,46 @@ body {
 #info img {
     width: 20px;
     height: 20px;
+}
+
+@media(max-width: 1000px) {
+    body {
+        display: block;
+        margin: auto;
+        padding-top: 20px;
+    }
+    #weather {
+        margin-bottom: 53px;
+    }
+    #base {
+        margin-right: 0;
+        margin-left: 33%;
+        /* margin-bottom: 53px; */
+    }
+    #detailed-info {
+        width: 250px;
+        top: 20px;
+        margin: 0 0 0 0;
+        position: unset;
+    }
+    #scorekeeper ul {
+        margin: 0;
+        /* padding: 10px 10px 100px 5px; */
+        font-size: 15px;
+    }
+    #scorekeeper li {
+        padding-top: 45px;
+    }
+    #info {
+        padding: 10px 10px 20px 7px;
+    }
+    #weather {
+        display: flex;
+    }
+}
+
+@media(max-width: 810px) {
+    #determinant i {
+        margin: 0 17% 0 17%;
+    }
 }
