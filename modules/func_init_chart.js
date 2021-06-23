@@ -65,8 +65,8 @@ function createChart(info) {
                 }
             },
             y: {
-                max: 30,
-                min: -20,
+                max: 40,
+                min: -30,
                 ticks: {
                     color: 'rgb(255, 137, 27)',
                     font: {
